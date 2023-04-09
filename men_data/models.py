@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-class Data(models.Model):
+class Info(models.Model):
     ies = models.TextField()
     sector_ies = models.TextField()
     caracter_ies = models.TextField()
