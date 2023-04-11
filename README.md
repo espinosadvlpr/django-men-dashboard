@@ -18,14 +18,14 @@ $ git clone https://github.com/espinosadvlpr/django-men-dashboard.git
 
 ## Instalando el proyecto
 
+Si desea trabajar sobre un entorno virtual de Python puede dar [clic aqui](https://www.geeksforgeeks.org/creating-python-virtual-environment-windows-linux/)
+para seguir un tutorial para instalar un entorno virtual para el proyecto en el sistema operativo que desee.
+
 Realice la instalación de las librerias necesarias para la ejecución del proyecto usando el comando
 
 ```
 $ pip install -r requirements.txt
 ```
-
-Si desea trabajar sobre un entorno virtual de Python puede dar [clic aqui](https://www.geeksforgeeks.org/creating-python-virtual-environment-windows-linux/)
-para seguir un tutorial para instalar un entorno virtual para el proyecto.
 
 Edite la configuración de usuario y contraseña de `MySQL` para la conexion de la base de datos en la linea 78 del archivo `dashboard_men/settings.py`
 
