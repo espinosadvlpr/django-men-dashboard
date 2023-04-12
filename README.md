@@ -90,5 +90,11 @@ Una vez creado el usuario, para ingresar al `admin` en el navegador ingrese el s
 1. Para hacer una petición GET a todos los datos del proyecto:
 
 ```
-GET http://127.0.0.1:8000/api/men_info
+GET http://localhost:8000/api/men_info
+```
+
+2. Para hacer una peticion GET a cada una de las preguntas del dashboard:
+
+```
+GET http://localhost:8000/api/first_question/
 ```
