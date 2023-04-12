@@ -9,20 +9,5 @@ class InfoApiViewSet(ModelViewSet):
     serializer_class = serializers.InfoSerializer
 
 class FirstApiViewSet(ModelViewSet):
-    queryset = Info.objects.all()
+    queryset = Info.objects.order_by('graduados').reverse()
     serializer_class = serializers.FirstQSerializer
-
-    # def list(self, request, *args, **kwargs):
-    #     info = self.queryset
-    #     first_question = {}
-    #     for data in info.values():
-    #         for key, value in data.items():
-    #             if key == 'ies':
-    #                 first_question[key]= value
-    #             if key == 'graduados':
-    #                 first_question[key]= value
-    #             if key == 'matriculados':
-    #                 first_question[key]= value
-    #     print(first_question)
-    #     serializer = self.serializer_class(info,many=True)
-    #     return Response(serializer.data)
