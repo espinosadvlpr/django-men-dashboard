@@ -13,3 +13,8 @@ class FirstQSerializer(ModelSerializer):
     class Meta:
         model = Info
         fields = ['ies','graduados','matriculados']
+
+class SecondQSerializer(ModelSerializer):
+    class Meta:
+        model = Info
+        fields = ['sector_ies','graduados']
