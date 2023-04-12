@@ -1,4 +1,5 @@
 from django.db import models
+from django.forms import model_to_dict
 
 # Create your models here.
 class Info(models.Model):
@@ -16,3 +17,7 @@ class Info(models.Model):
     semestre = models.IntegerField()
     graduados = models.IntegerField()
     matriculados = models.IntegerField()
+
+    def toJSON(self):
+        item = model_to_dict(self)
+        return item
