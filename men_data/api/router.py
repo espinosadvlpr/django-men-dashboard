@@ -8,3 +8,4 @@ router_posts.register(prefix='second_question',basename='second_question',viewse
 router_posts.register(prefix='third_question',basename='third_question',viewset=views.ThirdApiViewSet)
 router_posts.register(prefix='fourth_question',basename='fourth_question',viewset=views.FourthApiViewSet)
 router_posts.register(prefix='fifth_question',basename='fifth_question',viewset=views.FifthApiViewSet)
+router_posts.register(prefix='sixth_question',basename='sixth_question',viewset=views.SixthApiViewSet)
