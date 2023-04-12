@@ -28,3 +28,8 @@ class FourthQSerializer(ModelSerializer):
     class Meta:
         model = Info
         fields = ['programa_academico','graduados']
+
+class FifthQSerializer(ModelSerializer):
+    class Meta:
+        model = Info
+        fields = ['departamento_domicilio_ies','graduados']
