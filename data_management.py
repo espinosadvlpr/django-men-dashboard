@@ -18,7 +18,7 @@ except ValueError as value_error:
 except Exception as exception:
     print(exception)
 else:
-    db_connection.execute(text("insert into men_data_info (ies, sector_ies, caracter_ies, departamento_domicilio_ies, municipio_domicilio_ies, programa_academico, nivel_academico, nivel_formacion, metodología, sexo, anio, semestre, graduados, matriculados) select ies, sector_ies, caracter_ies, departamento_domicilio_ies, municipio_domicilio_ies, programa_academico, nivel_academico, nivel_formacion, metodologia, sexo, anio, semestre, graduados, matriculados from men_data_info_csv;"))
+    db_connection.execute(text("insert into men_data_info (ies, sector_ies, caracter_ies, departamento_domicilio_ies, municipio_domicilio_ies, programa_academico, nivel_academico, nivel_formacion, metodologia, sexo, anio, semestre, graduados, matriculados) select ies, sector_ies, caracter_ies, departamento_domicilio_ies, municipio_domicilio_ies, programa_academico, nivel_academico, nivel_formacion, metodologia, sexo, anio, semestre, graduados, matriculados from men_data_info_csv;"))
     db_connection.commit()
     print("Data successfully charged to table men_data_info")
 finally:

@@ -77,8 +77,8 @@ WSGI_APPLICATION = 'dashboard_men.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql', 
-        'NAME': '',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': '[database_name]',
         'USER': '',
         'PASSWORD': '',
         'HOST': 'localhost',
