@@ -20,3 +20,7 @@ class SecondApiViewSet(ModelViewSet):
 class ThirdApiViewSet(ModelViewSet):
     queryset = Info.objects.values('anio','nivel_formacion').annotate(graduados=Sum('graduados')).order_by('-graduados')
     serializer_class = serializers.ThirdQSerializer
+
+class FourthApiViewSet(ModelViewSet):
+    queryset = Info.objects.values('programa_academico').annotate(graduados=Sum('graduados')).order_by('-graduados')
+    serializer_class = serializers.FourthQSerializer
