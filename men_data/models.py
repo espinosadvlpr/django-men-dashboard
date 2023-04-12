@@ -11,7 +11,7 @@ class Info(models.Model):
     programa_academico = models.TextField()
     nivel_academico = models.TextField()
     nivel_formacion = models.TextField()
-    metodología = models.TextField()
+    metodologia = models.TextField()
     sexo = models.TextField()
     anio = models.IntegerField()
     semestre = models.IntegerField()
