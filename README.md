@@ -97,4 +97,5 @@ GET http://localhost:8000/api/men_info
 
 ```
 GET http://localhost:8000/api/first_question/
+GET http://localhost:8000/api/second_question/
 ```
