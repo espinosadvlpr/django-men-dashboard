@@ -98,4 +98,6 @@ GET http://localhost:8000/api/men_info
 ```
 GET http://localhost:8000/api/first_question/
 GET http://localhost:8000/api/second_question/
+GET http://localhost:8000/api/third_question/
+GET http://localhost:8000/api/fourth_question/
 ```
