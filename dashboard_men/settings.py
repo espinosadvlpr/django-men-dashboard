@@ -80,10 +80,10 @@ WSGI_APPLICATION = 'dashboard_men.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql', 
-        'NAME': 'men_dashboard_db',
-        'USER': 'root',
-        'PASSWORD': 'mysql123',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': '[database_name]',
+        'USER': '',
+        'PASSWORD': '',
         'HOST': 'localhost',
         'PORT': '3306',
     }
