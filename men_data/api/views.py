@@ -40,3 +40,7 @@ class SeventhApiViewSet(ModelViewSet):
 class EightApiViewSet(ModelViewSet):
     queryset = Info.objects.values('ies','programa_academico','departamento_domicilio_ies','metodologia').annotate(graduados=Sum('graduados')).order_by('-graduados')
     serializer_class = serializers.EightQSerializer
+
+class NinthApiViewSet(ModelViewSet):
+    queryset = Info.objects.values('ies','programa_academico','municipio_domicilio_ies','metodologia','sector_ies','nivel_formacion').annotate(count=Count('id')).order_by('ies')
+    serializer_class = serializers.NinthQSerializer

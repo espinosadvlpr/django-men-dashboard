@@ -52,3 +52,8 @@ class EightQSerializer(ModelSerializer):
     class Meta:
         model = Info
         fields = ['ies','programa_academico','departamento_domicilio_ies','metodologia','graduados']
+
+class NinthQSerializer(ModelSerializer):
+    class Meta:
+        model = Info
+        fields = ['ies','programa_academico','municipio_domicilio_ies','metodologia','sector_ies','nivel_formacion']
