@@ -5,7 +5,7 @@ al Ministerio de Educación Nacional.
 
 ## Requisitos para el proyecto
 
-Para poder ejecutar correctamente el proyecto es necesario tener instalando `Python`,
+Para poder ejecutar correctamente el proyecto es necesario tener instalado `Python`,
 ademas de un servidor de bases de datos como **[MySQL](https://dev.mysql.com/downloads/workbench/)** o `MariaDB`.
 
 ## Clonando del proyecto
@@ -27,7 +27,7 @@ Realice la instalación de las librerias necesarias para la ejecución del proye
 $ pip install -r requirements.txt
 ```
 
-Edite la configuración de usuario y contraseña de `MySQL` para la conexion de la base de datos en la linea 78 del archivo `dashboard_men/settings.py`
+Edite la configuración de usuario y contraseña de `MySQL` para la conexion de la base de datos en el archivo `dashboard_men/settings.py`
 
 **NOTA:** debe crear previamente una base de datos para el proyecto y agregar el nombre a la configuración en el campo "[database_name]".
 
@@ -53,7 +53,7 @@ $ python manage.py migrate
 ```
 
 Para realizar la inserción de los datos, edite la configuración de usuario y contraseña de la base de datos para la conexion de la con **MySQL**
-en la linea 11 del script `data_management.py`:
+en el script `data_management.py`:
 
 ```
 'mysql+pymysql://[user]:[password]@127.0.0.1/[database_name]'
