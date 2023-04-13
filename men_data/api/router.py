@@ -12,3 +12,4 @@ router_posts.register(prefix='sixth_question',basename='sixth_question',viewset=
 router_posts.register(prefix='seventh_question',basename='seventh_question',viewset=views.SeventhApiViewSet)
 router_posts.register(prefix='eight_question',basename='eight_question',viewset=views.EightApiViewSet)
 router_posts.register(prefix='ninth_question',basename='ninth_question',viewset=views.NinthApiViewSet)
+router_posts.register(prefix='tenth_question',basename='tenth_question',viewset=views.TenthApiViewSet)
