@@ -102,4 +102,8 @@ GET http://localhost:8000/api/third_question/
 GET http://localhost:8000/api/fourth_question/
 GET http://localhost:8000/api/fifth_question/
 GET http://localhost:8000/api/sixth_question/
+GET http://localhost:8000/api/seventh_question/
+GET http://localhost:8000/api/eight_question/
+GET http://localhost:8000/api/ninth_question/
+GET http://localhost:8000/api/tenth_question/
 ```
