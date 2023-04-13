@@ -10,7 +10,7 @@ class InfoApiViewSet(ModelViewSet):
     serializer_class = serializers.InfoSerializer
 
 class FirstApiViewSet(ModelViewSet):
-    queryset = Info.objects.order_by('graduados').reverse()
+    queryset = Info.objects.values('ies').annotate(graduados=Sum('graduados')).annotate(matriculados=Sum('matriculados')).order_by('-graduados')
     serializer_class = serializers.FirstQSerializer
 
 class SecondApiViewSet(ModelViewSet):
