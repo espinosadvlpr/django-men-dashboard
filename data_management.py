@@ -8,7 +8,7 @@ print("CSV data successfully charged...")
 
 table_name = "men_data_info_csv"
 sql_engine = create_engine(
-    'mysql+pymysql://[user]:[password]@127.0.0.1/[database_name]', pool_recycle=3600)
+    'mysql+pymysql://root:mysql123@127.0.0.1/men_dashboard_db', pool_recycle=3600)
 db_connection = sql_engine.connect()
 
 try:
