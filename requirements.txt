@@ -1,6 +1,7 @@
 asgiref==3.6.0
 DateTime==5.1
 Django==4.2
+django-cors-headers==3.14.0
 djangorestframework==3.14.0
 greenlet==2.0.2
 mysqlclient==2.1.1
