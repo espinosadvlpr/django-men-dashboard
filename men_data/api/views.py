@@ -1,6 +1,6 @@
 from rest_framework.viewsets import ModelViewSet
 from rest_framework.response import Response
-from django.db.models import Sum, Count
+from django.db.models import Sum, Count, Q
 from django.forms import model_to_dict
 from men_data.models import Info
 import men_data.api.serializers as serializers
@@ -32,3 +32,7 @@ class FifthApiViewSet(ModelViewSet):
 class SixthApiViewSet(ModelViewSet):
     queryset = Info.objects.values('anio','metodologia').annotate(ies=Count('ies')).order_by('-ies')
     serializer_class = serializers.SixthQSerializer
+
+class SeventhApiViewSet(ModelViewSet):
+    queryset = Info.objects.values('anio','programa_academico').annotate(masculino=Sum(1,filter=Q(sexo='HOMBRE'))).annotate(femenino=Sum(1,filter=Q(sexo='MUJER'))).order_by('-anio')
+    serializer_class = serializers.SeventhQSerializer

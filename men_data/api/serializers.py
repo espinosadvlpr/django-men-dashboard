@@ -1,4 +1,5 @@
 from rest_framework.serializers import ModelSerializer
+from rest_framework import serializers
 from men_data.models import Info
 
 class InfoSerializer(ModelSerializer):
@@ -38,3 +39,11 @@ class SixthQSerializer(ModelSerializer):
     class Meta:
         model = Info
         fields = ['anio','metodologia','ies']
+
+class SeventhQSerializer(ModelSerializer):
+    masculino = serializers.IntegerField()
+    femenino = serializers.IntegerField()
+
+    class Meta:
+        model = Info
+        fields = ['anio','programa_academico','masculino','femenino']
