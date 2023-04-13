@@ -52,20 +52,20 @@ $ python manage.py makemigrations
 $ python manage.py migrate
 ```
 
-Para realizar la inserción de los datos, edite la configuración de usuario y contraseña de la base de datos para la conexion de la con **MySQL**
+Para realizar la inserción de los datos, edite la configuración de usuario y contraseña de la base de datos para la conexion con **MySQL**
 en el script `data_management.py`:
 
 ```
 'mysql+pymysql://[user]:[password]@127.0.0.1/[database_name]'
 ```
 
-Ejecutando el script con el siguiente comando se realizara la inserción de los datos en **MySQL**:
+Ejecutando el script en una consola con el siguiente comando se realizará la inserción de los datos en **MySQL**:
 
 ```
 $ python data_management.py
 ```
 
-Para ejecutar el proyecto de **Django** debe usar el siguiente comando:
+Finalmente, para ejecutar el servidor de **Django** se debe usar el siguiente comando en una consola:
 
 ```
 $ python manage.py runserver
@@ -75,9 +75,9 @@ $ python manage.py runserver
 
 - Para ingresar a la API en el navegador ingrese el siguiente link <http://127.0.0.1:8000/api/>
 
-- Si desea revisar los datos subidos al proyecto lo puede realizar desde el `admin`:
+Si desea revisar los datos subidos al proyecto lo puede realizar desde el `admin`:
 
-Cree un usuario administrador con el comando :
+- Cree un usuario administrador con el comando:
 
 ```
 $ python manage.py createsuperuser
