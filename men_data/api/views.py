@@ -30,7 +30,7 @@ class FifthApiViewSet(ModelViewSet):
     serializer_class = serializers.FifthQSerializer
 
 class SixthApiViewSet(ModelViewSet):
-    queryset = Info.objects.values('anio','metodologia').annotate(ies=Count('ies')).order_by('-ies')
+    queryset = Info.objects.values('anio','metodologia').annotate(cantidad_ies=Count('ies')).order_by()
     serializer_class = serializers.SixthQSerializer
 
 class SeventhApiViewSet(ModelViewSet):
