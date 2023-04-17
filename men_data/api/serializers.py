@@ -44,10 +44,11 @@ class SixthQSerializer(ModelSerializer):
 class SeventhQSerializer(ModelSerializer):
     masculino = serializers.IntegerField()
     femenino = serializers.IntegerField()
+    total_graduados = serializers.IntegerField()
 
     class Meta:
         model = Info
-        fields = ['anio','programa_academico','masculino','femenino']
+        fields = ['anio','programa_academico','masculino','femenino','total_graduados']
 
 class EightQSerializer(ModelSerializer):
     class Meta:
