@@ -34,7 +34,7 @@ class SixthApiViewSet(ModelViewSet):
     serializer_class = serializers.SixthQSerializer
 
 class SeventhApiViewSet(ModelViewSet):
-    queryset = Info.objects.values('anio','programa_academico').annotate(masculino=Sum(1,filter=Q(sexo='HOMBRE'))).annotate(femenino=Sum(1,filter=Q(sexo='MUJER'))).annotate(total_graduados=Sum('graduados')).order_by('-total_graduados')
+    queryset = Info.objects.values('anio','programa_academico').annotate(masculino=Sum('graduados',filter=Q(sexo='HOMBRE'))).annotate(femenino=Sum('graduados',filter=Q(sexo='MUJER'))).annotate(total_graduados=Sum('graduados')).order_by('-total_graduados')
     serializer_class = serializers.SeventhQSerializer
 
 class EightApiViewSet(ModelViewSet):
